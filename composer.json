@@ -1,0 +1,7 @@
+{
+    "name": "gadon789/parser",
+    "require": {
+        "makhov/php-tomita": "^0.3.0",
+        "twig/twig": "^2.0"
+    }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="../index.php" method="post">
+    <textarea name="symptoms" id="" cols="30" rows="10"></textarea>
+    <button type="submit">Submit</button>
+</form>
+{% for id,facts in result %}
+id: {{id}} </br>
+    {% for fact in facts %}
+        {% for key,value in fact %}
+            {{key}} : {{value}} </br>
+        {% endfor %}
+    {% endfor %}
+</br>
+{% endfor %}
+</body>
+</html>

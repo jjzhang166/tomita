@@ -1,0 +1,27 @@
+import "base.proto";           // описание protobuf-типов
+import "facttypes_base.proto"; // описание protobuf-типа NFactType.TFact
+
+message Pains: NFactType.TFact
+{
+  optional string Pain = 1;
+    optional string Localization = 2;
+    optional string common = 3;
+}
+
+message Localizations: NFactType.TFact
+{
+  optional string Localization = 1;
+}
+
+message CommonSymptoms: NFactType.TFact
+{
+  optional string common = 1;
+}
+
+/*message Date: NFactType.TFact
+{
+  optional string DayOfWeek = 1;
+  optional string Day = 2;
+  optional string Month = 3;
+  optional string Year = 4;
+}*/
